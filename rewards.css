@@ -22,9 +22,10 @@ padding: 4px 15px;
 }
 
 .reward_item{
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   position: relative;
+  font-size: 28px;
 }
 
 .reward_item:hover{

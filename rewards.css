@@ -162,3 +162,38 @@ padding: 4px 15px;
     transform: scale(0);  
   }
 }
+
+.reward_congrats{
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-200px);
+  -webkit-text-stroke: 1px #000;
+  font-size: 45px;
+  background-color: #f0f;
+  box-shadow: 0px 0px 100px #f9f, 0px 0px 100px #f9f, 0px 0px 100px #f9f;
+}
+
+@keyframes reward_ani_congrats {
+  0% {
+    transform: translateY(-200px); 
+  }
+  10% {
+    transform: translateY(150px);
+  }
+  90% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(-200px);  
+  }
+}
+
+#rw1:checked ~ #rw2:checked ~ #rw3:checked ~ #rw4:checked ~ .slider_wrapper .reward_congrats {
+  animation-name: reward_ani_congrats;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}

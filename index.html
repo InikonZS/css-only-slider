@@ -12,15 +12,36 @@
   <link href="./slots.css" rel="stylesheet">
   <link href="./hovered.css" rel="stylesheet">
   <link href="./cube.css" rel="stylesheet">
+  <link href="./rewards.css" rel="stylesheet">
 </head>
 
 <body>
+  <input id="rw1" name="rw1_" type="checkbox" class="lg">
+  <input id="rw2" name="rw2_" type="checkbox" class="lg">
+  <input id="rw3" name="rw3_" type="checkbox" class="lg">
+  <input id="rw4" name="rw4_" type="checkbox" class="lg">
+
   <input checked id="pg1" name="pg" type="radio" class="lg">
   <input id="pg2" name="pg" type="radio" class="lg">
   <input id="pg3" name="pg" type="radio" class="lg">
   <input id="pg4" name="pg" type="radio" class="lg">
   <div class="slider_wrapper">
     <div class="slider_main">
+      <div class="reward_counter">
+        <div class="reward_black">
+          <span>Secrets: </span>
+          <span class="secrets_values">
+            <span class="secrets_sizer">0</span>
+            <!--<span class="secrets_value" id="secrets_value0">0</span>
+            <span class="secrets_value" id="secrets_value1">1</span>
+            <span class="secrets_value" id="secrets_value2">2</span>
+            <span class="secrets_value" id="secrets_value3">3</span>
+            <span class="secrets_value" id="secrets_value4">4</span>-->
+          </span>
+          <span>/4</span>
+        </div>
+      </div>
+
       <div class="slider_zeros slider_zeros_left">
         <div class="slider_left">
           <label for="pg1" class="slider_button left1">left</label>
@@ -42,7 +63,23 @@
 
       <div class="slides">
         <div class="slide slide1">
-          
+          <div>fd<br>f<br>fd<br>fd</div>
+          <div class="reward_item">
+            <label for="rw1" class="rew rew1"></label>
+            <div class="reward_item_animation rewa1">left</div>
+          </div>
+          <div class="reward_item">
+            <label for="rw2" class="rew rew2"></label>
+            <div class="reward_item_animation rewa2">left</div>
+          </div>
+          <div class="reward_item">
+            <label for="rw3" class="rew rew3"></label>
+            <div class="reward_item_animation rewa3">left</div>
+          </div>
+          <div class="reward_item">
+            <label for="rw4" class="rew rew4"></label>
+            <div class="reward_item_animation rewa4">left</div>
+          </div>
           <div class="carddemo">
             <div class="carddemo_child">
               <div class="shadow">
